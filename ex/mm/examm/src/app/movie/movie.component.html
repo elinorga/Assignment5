@@ -1,0 +1,13 @@
+<div class="movie-wrapper">
+  <a href="https://www.imdb.com/title/{{movie.imdbID}}" target="_blank"><h2>{{movie.Title}}</h2></a> <br>
+  <img [src]="movie.Poster" (click)="showDetails(movie.imdbID)">
+</div>
+
+<div class="details" *ngIf="movieDetails.length > 0">
+  <ul>
+    <h3>Movie Details</h3>
+    <li *ngFor="let detail of movieDetails">
+      {{ detail }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,7 @@
+לא לשכוח לשנות דברים בסטיילס ואינדקס
+
+1. להוסיף ב app.module :
+import {FormsModule} from '@angular/forms';
+גם ב imports
+FormsModule,
+2. להכניס פרטים בform עצמו.

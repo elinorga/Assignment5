@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin-top: 0px;
+    background-color: #E6D6C8;
+}
+
+*{
+	outline: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}

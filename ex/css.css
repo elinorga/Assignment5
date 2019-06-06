@@ -1,0 +1,36 @@
+*{
+    font-family: 'Trebuchet MS';
+    outline: none;
+    box-sizing: border-box;
+    background-color: blueviolet;
+
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 20%;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 10px;
+    grid-template-rows: 10% 90%;
+
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    overflow: auto;
+
+    display: none;
+    display: block;
+
+}
+#wrapper > div:hover {
+    box-shadow: 10px 10px 10px black;
+}

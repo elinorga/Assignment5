@@ -1,0 +1,15 @@
+<div class="searchBar">
+  <form id="searchForm" (submit)="searchMovie($event, query)">
+    <input id="search-input" type="text" placeholder="Enter movie name..." minlength="3" #query />
+    <button id="search-btn">Search</button>
+  </form>
+</div>
+<div class="error-message" *ngIf="minError">Please enter at least 3 characters</div>
+<div class="error-message" *ngIf="inputError">Please enter a valid movie name</div>
+
+<div id="movies-wrapper">
+  <div id="movie-details" *ngFor="let currentMovie of movies">
+    <app-movie [movie]="currentMovie"></app-movie>
+  </div>
+  <button id="load-more-btn" *ngIf="movies.length > 0" (click)="loadMovies()" [disabled]="!hasMore">Load More</button>
+</div>
